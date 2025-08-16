@@ -1,4 +1,4 @@
-@use "../../assets/css/responsive.scss";
+
 .frame-page {
 
 
@@ -13,26 +13,6 @@
     display: grid;
     width: 100%;
     margin: 50px 200px 50px 200px;
-    @include responsive.desktop {
-      width: 80%;
-      margin: 50px 200px 50px 200px;
-    }
-    @include responsive.laptop {
-      width: 80%;
-      margin: 50px 200px 50px 200px;
-    }
-    @include responsive.tablet {
-      width: 90%;
-      margin: 50px 100px 50px 100px;
-    }
-    @include responsive.mobile-large {
-      margin: 25px 50px 50px 50px;
-    }
-    @include responsive.mobile-medium {
-      margin: 25px 20px 50px 20px;
-    }
-    @include responsive.mobile-small {
-      margin: 25px 10px 50px 10px;
-    }
+   
   }
 }

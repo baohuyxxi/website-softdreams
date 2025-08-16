@@ -1,127 +1,64 @@
-@use "../../assets/css/responsive.scss";
+/* src/components/Navbar/Navbar.scss */
+
+/* Dùng biến màu global (đặt trong index.scss hoặc variables.scss) */
+:root {
+  --navbar-height: 60px;
+}
+
 .navbar-default {
-  background: var(--background);
+  background: var(--background, #fff);
   border-bottom: 1px solid #ddd;
-  padding: 5px 15px;
-   width: -webkit-fill-available;
+  height: var(--navbar-height);
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; // Cho phép xuống hàng
-    gap: inherit;
+    flex-wrap: wrap;
   }
 
   .navbar-logo img {
     height: 45px;
-    scale: 300%;
     width: auto;
     object-fit: contain;
+  }
 
-    @include responsive.mobile-small {
-      height: 45px;
-    }
+  /* menu link */
+  .navbar-menu a {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
 
-    @include responsive.mobile-medium {
-      height: 50px;
-    }
-
-    @include responsive.mobile-large {
-      height: 55px;
+    &.active,
+    &:hover {
+      border-bottom-color: var(--primary, #2563eb); /* mặc định xanh */
     }
   }
 
-  .navbar-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: auto;
-    font-weight:600;
-    font-size: larger;
-
-    a {
-      padding: 8px 10px;
-      border-bottom: 3px solid transparent;
-      transition: border-color 0.3s ease;
-      align-content: space-evenly;
-
-      &:hover {
-        border-bottom-color: var(--primary);
-      }
-
-      &.active {
-        border-bottom-color: var(--primary);
-      }
-    }
-
-    @include responsive.mobile-medium {
-      flex: 1 1 100%; // Chiếm full hàng
-      justify-content: center;
-    }
-
-    @include responsive.mobile-small {
-      flex: 1 1 100%;
-      justify-content: center;
-    }
-  }
-
+  /* icon bên phải (social, search,...) */
   .navbar-right {
     display: flex;
     align-items: center;
-    gap: inherit;
+    gap: 12px;
 
-    .navbar-social {
+    .navbar-social__item {
       display: flex;
       align-items: center;
-      gap: 10px;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease, color 0.3s ease;
 
-      &__item {
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        //   background-color: var(--primary-light, #f5f5f5);
-        transition: background-color 0.3s ease;
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          // color: var(--primary, #333);
-          font-size: 18px;
-        }
-
-        &:hover {
-          // background-color: var(--primary);
-
-          a {
-            color: var(--primary);
-          }
-        }
+        font-size: 18px;
+        color: var(--text-color, #333);
       }
-    }
 
-    @include responsive.mobile-medium {
-      flex: 1 1 100%;
-      justify-content: center;
-
-      .navbar-social {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-
-    @include responsive.mobile-small {
-      flex: 1 1 100%;
-      justify-content: center;
-
-      .navbar-social {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+      &:hover a {
+        color: var(--primary, #2563eb);
       }
     }
   }

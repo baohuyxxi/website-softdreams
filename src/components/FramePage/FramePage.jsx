@@ -1,24 +1,22 @@
-import "./FramePage.scss";
-// import Footer from '../Footer/Footer'
-import HeaderDefault from "~/components/HeaderDefault/HeaderDefault";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Banner from "../Banner/Banner";
 import Messenger from "../Messenger/Messenger";
 import Phone from "../Phone/Phone";
 import ChatZalo from "../ChatZalo/ChatZalo";
 
 export default function FramePage({ children }) {
   return (
-    <div className="frame-page">
-      <HeaderDefault />
+    <div className="relative flex flex-col h-max">
       <Navbar />
-      {/* <Banner /> */}
-      <main className="frame-page__main">
+
+      <main className="relative min-h-[300px] h-max w-full my-[50px]">
         {children}
-        <Messenger />
-        <ChatZalo />
-        <Phone />
+
+        <div className="fixed bottom-6 right-6 flex flex-col gap-3">
+          <Messenger />
+          <ChatZalo />
+          <Phone />
+        </div>
       </main>
 
       <Footer />
