@@ -2,6 +2,7 @@ import React from "react";
 import EventCard from "../EventCard/EventCard";
 import events from "~/mock/Events";
 
+
 export default function EventFinish() {
   // Lọc ra những sự kiện đã qua
   const finishedEvents = events.filter(

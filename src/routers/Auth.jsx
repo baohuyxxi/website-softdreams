@@ -19,6 +19,7 @@ const NewsPage = lazy(() => import("../pages/NewsPage/NewsPage"));
 const CareersPage = lazy(() => import("../pages/CareersPage/CareersPage"));
 const EventsPage = lazy(() => import("../pages/EventsPage/EventsPage"));
 
+
 const Auth = () => {
   return (
     <Routes>

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function EventCard({ event }) {
   return (
     <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
