@@ -21,6 +21,7 @@
     "@reduxjs/toolkit": "^2.2.5",
     "axios": "^1.7.0",
     "date-fns": "^3.6.0",
+    "framer-motion": "^12.23.12",
     "i": "^0.3.7",
     "jquery": "~3.4.1",
     "lucide-react": "^0.539.0",
