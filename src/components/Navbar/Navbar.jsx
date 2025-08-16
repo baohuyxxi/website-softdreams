@@ -11,7 +11,7 @@ export default function Navbar() {
   const menuItems = [
     { path: "/", label: "Trang chủ" },
     { path: "/gioi-thieu", label: "Giới thiệu" },
-    { path: "san-pham", label: "Sản phẩm" },
+    { path: "/san-pham", label: "Sản phẩm" },
     { path: "/dich-vu", label: "Dịch vụ" },
     { path: "/tin-tuc", label: "Tin Tức" },
     { path: "/tuyen-dung", label: "Tuyển dụng" },
