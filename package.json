@@ -37,6 +37,7 @@
     "redux-persist": "^6.0.0",
     "sass": "1.32.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.10",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

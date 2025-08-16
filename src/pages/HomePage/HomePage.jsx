@@ -1,5 +1,6 @@
 import "./HomePage.scss";
 import FramePage from "~/components/FramePage/FramePage";
+import Section1 from "./Section1";
 import Ecosystem from "~/components/Ecosystem/Ecosystem";
 import Testimonial from "~/components/Testimonial/Testimonial";
 import ContactHotline from "~/components/ContactHotline/ContactHotline";
@@ -9,6 +10,7 @@ import News from "~/components/News/News";
 export default function HomePage() {
   return (
     <FramePage>
+      <Section1 />
       <Ecosystem />
       <Testimonial />
       <CulturePeople />
