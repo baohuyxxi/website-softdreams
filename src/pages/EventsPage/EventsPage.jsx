@@ -14,5 +14,6 @@ export default function EventsPage({ events = [] }) {
       <EventFinish events={events} />
       <EventForm />
     </FramePage>
+    
   );
 }
