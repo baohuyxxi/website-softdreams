@@ -1,4 +1,4 @@
-@use "../../assets/css/responsive.scss" as responsive;
+
 
 .footer {
   background-color: #fff;
@@ -82,27 +82,4 @@
   }
 }
 
-// Responsive styles
-@include responsive.mobile-small {
-  .footer {
-    padding-top: 20px;
-  }
-}
 
-@include responsive.mobile-medium {
-  .footer {
-    padding-top: 30px;
-  }
-}
-
-@include responsive.tablet {
-  .footer {
-    padding-top: 40px;
-  }
-}
-
-@include responsive.laptop {
-  .footer {
-    padding-top: 50px;
-  }
-}
